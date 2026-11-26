@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="347.04pt" viewBox="0 0 684 347.04" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-26T20:33:50.015799</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 347.04 
+L 684 347.04 
+L 684 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 182.97 266.1048 
+L 523.35 266.1048 
+Q 530.046 266.1048 530.046 259.452 
+L 530.046 84.816 
+Q 530.046 78.1632 523.35 78.1632 
+L 182.97 78.1632 
+Q 176.274 78.1632 176.274 84.816 
+L 176.274 259.452 
+Q 176.274 266.1048 182.97 266.1048 
+z
+" clip-path="url(#pe2a4c022de)" style="fill: #edf3f8; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #91a7ba; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 29.52 197.3592 
+L 149.49 197.3592 
+Q 153.954 197.3592 153.954 192.924 
+L 153.954 134.712 
+Q 153.954 130.2768 149.49 130.2768 
+L 29.52 130.2768 
+Q 25.056 130.2768 25.056 134.712 
+L 25.056 192.924 
+Q 25.056 197.3592 29.52 197.3592 
+z
+" clip-path="url(#pe2a4c022de)" style="fill: #ffffff; stroke: #416580; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 199.71 197.3592 
+L 319.68 197.3592 
+Q 324.144 197.3592 324.144 192.924 
+L 324.144 134.712 
+Q 324.144 130.2768 319.68 130.2768 
+L 199.71 130.2768 
+Q 195.246 130.2768 195.246 134.712 
+L 195.246 192.924 
+Q 195.246 197.3592 199.71 197.3592 
+z
+" clip-path="url(#pe2a4c022de)" style="fill: #ffffff; stroke: #416580; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 350.37 197.3592 
+L 503.82 197.3592 
+Q 508.284 197.3592 508.284 192.924 
+L 508.284 134.712 
+Q 508.284 130.2768 503.82 130.2768 
+L 350.37 130.2768 
+Q 345.906 130.2768 345.906 134.712 
+L 345.906 192.924 
+Q 345.906 197.3592 350.37 197.3592 
+z
+" clip-path="url(#pe2a4c022de)" style="fill: #ffffff; stroke: #416580; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 554.04 197.3592 
+L 654.48 197.3592 
+Q 658.944 197.3592 658.944 192.924 
+L 658.944 134.712 
+Q 658.944 130.2768 654.48 130.2768 
+L 554.04 130.2768 
+Q 549.576 130.2768 549.576 134.712 
+L 549.576 192.924 
+Q 549.576 197.3592 554.04 197.3592 
+z
+" clip-path="url(#pe2a4c022de)" style="fill: #ffffff; stroke: #416580; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a40" x="29.52" y="26.604" transform="rotate(-0 29.52 26.604)">PROJECT 001  /  SYSTEM ARCHITECTURE</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526579" x="29.52" y="47.1168" transform="rotate(-0 29.52 47.1168)">Arduino Leonardo • Five-mode LED controller</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #152a40" x="196.92" y="101.448" transform="rotate(-0 196.92 101.448)">ARDUINO LEONARDO / ATmega32U4</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152a40" x="89.505" y="155.0862" transform="rotate(-0 89.505 155.0862)">Serial Monitor</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="89.505" y="176.62464" transform="rotate(-0 89.505 176.62464)">Commands 0–4</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152a40" x="259.695" y="155.0862" transform="rotate(-0 259.695 155.0862)">Command parser</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="259.695" y="176.62464" transform="rotate(-0 259.695 176.62464)">Serial.read()</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152a40" x="427.095" y="155.0862" transform="rotate(-0 427.095 155.0862)">Mode &amp; timing logic</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="427.095" y="176.62464" transform="rotate(-0 427.095 176.62464)">millis() / LED state</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #152a40" x="604.26" y="155.0862" transform="rotate(-0 604.26 155.0862)">Onboard LED</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="604.26" y="176.62464" transform="rotate(-0 604.26 176.62464)">LED_BUILTIN</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 151.491566 163.5408 
+Q 174.601628 163.5408 195.922835 163.5408 
+" style="fill: none; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 191.922835 161.5408 
+L 195.922835 163.5408 
+L 191.922835 165.5408 
+z
+" style="fill: #416580; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 321.676798 163.5408 
+Q 335.02341 163.5408 346.581168 163.5408 
+" style="fill: none; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 342.581168 161.5408 
+L 346.581168 163.5408 
+L 342.581168 165.5408 
+z
+" style="fill: #416580; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 505.821566 163.5408 
+Q 528.931628 163.5408 550.252835 163.5408 
+" style="fill: none; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 546.252835 161.5408 
+L 550.252835 163.5408 
+L 546.252835 165.5408 
+z
+" style="fill: #416580; stroke: #416580; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="174.6" y="124.7328" transform="rotate(-0 174.6 124.7328)">USB serial</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 258.3 192.584015 
+L 258.3 164.25432 
+L 89.784 164.25432 
+L 89.784 191.242375 
+" style="fill: none; stroke: #416580; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 91.784 187.242375 
+L 89.784 191.242375 
+L 87.784 187.242375 
+z
+" style="fill: #416580; stroke: #416580; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="171.81" y="237.276" transform="rotate(-0 171.81 237.276)">Mode acknowledgment</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526579" x="353.16" y="242.2656" transform="rotate(-0 353.16 242.2656)">Startup: mode 0 / LED LOW</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526579" x="29.52" y="302.1408" transform="rotate(-0 29.52 302.1408)">Source: original final sketch • Serial.begin(9600) • Logical architecture, not a wiring schematic</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #526579" x="29.52" y="323.208" transform="rotate(-0 29.52 323.208)">CRITERION WORKS  |  001_ARC_001  |  R00  |  Retrospective documentation</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe2a4c022de">
+   <rect x="7.2" y="7.2" width="669.6" height="332.64"/>
+  </clipPath>
+ </defs>
+</svg>
