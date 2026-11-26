@@ -9,24 +9,24 @@
 | Platform | Arduino Leonardo |
 | Discipline | Electronics and Embedded Systems |
 | Development Status | Completed |
-| Completion Date | November 20, 2026 |
-| Documentation Revision | R00 |
+| Functional Testing | Developer-reported pass |
+| Source Code Review | Completed |
+| Documentation Revision | R01 |
 
 ## 1. Project Overview
 
 This project implements a programmable LED control system using the Arduino Leonardo microcontroller.
 
-The system progressed from basic digital output control to a multi-mode, serial-controlled application utilizing non-blocking timing.
+Development progressed from basic digital output control to a multi-mode, serial-controlled application utilizing non-blocking timing.
 
-The completed application allows the operator to select between five operating modes through the Arduino Serial Monitor.
+The final application allows the operator to select between five operating modes through the Arduino Serial Monitor.
 
 ## 2. Engineering Objectives
 
-- Establish foundational microcontroller programming skills.
 - Implement digital output control.
 - Implement serial command processing.
 - Develop multiple operating modes.
-- Transition from blocking delays to non-blocking timing.
+- Transition from blocking to non-blocking timing.
 - Implement a heartbeat status indicator.
 - Verify functional operation across all five modes.
 
@@ -40,18 +40,18 @@ The completed application allows the operator to select between five operating m
 | Development Environment | Arduino IDE | N/A |
 | Programming Language | Arduino C/C++ | N/A |
 
-The system utilizes the onboard LED through the LED_BUILTIN pin definition.
+The application controls the onboard LED using the LED_BUILTIN pin definition.
 
 ## 4. System Architecture
 
 The system consists of four primary functional elements:
 
-1. Operator command through the Serial Monitor.
-2. Serial command interpretation.
-3. Operating mode and timing logic.
+1. Serial Monitor operator interface.
+2. Serial command processing.
+3. Operating mode and non-blocking timing logic.
 4. Digital LED output.
 
-The microcontroller processes incoming serial commands and adjusts the LED output according to the selected operating mode.
+The microcontroller processes incoming serial commands and controls the LED according to the selected operating mode.
 
 ## 5. Operating Modes
 
@@ -63,99 +63,139 @@ The microcontroller processes incoming serial commands and adjusts the LED outpu
 | 3 | Custom | 500 ms | 1500 ms |
 | 4 | Heartbeat | 50 ms | 950 ms |
 
-Serial communication operates at 9600 baud.
+Serial initialization: 9600 baud.
 
-## 6. Development Progression
+The timing values listed above are configured software intervals, not instrument-measured results.
 
-The project was developed incrementally through the following stages:
+The controller initializes in Stop mode with the LED turned off.
 
-1. Basic LED blinking.
-2. Double-flash LED operation.
-3. Multiple operating modes.
-4. Serial-based mode selection.
-5. Additional custom operating mode.
-6. Non-blocking timing and heartbeat functionality.
+## 6. Source Code
+
+### Final Application
+
+[Project001_Final_5Mode_Controller.ino](src/Project001_Final_5Mode_Controller/Project001_Final_5Mode_Controller.ino)
+
+### Development History
+
+| Stage | Implementation | Source |
+|---|---|---|
+| Challenge 4 | Four operating modes using blocking delays | [View code](development/Project001_Challenge4/Project001_Challenge4.ino) |
+| Challenge 5 | Non-blocking LED timing using millis() | [View code](development/Project001_Challenge5/Project001_Challenge5.ino) |
+| Challenge 6 | Integrated five-mode non-blocking controller | [View code](development/Project001_Challenge6/Project001_Challenge6.ino) |
+| Final Application | Final retained five-mode controller | [View code](src/Project001_Final_5Mode_Controller/Project001_Final_5Mode_Controller.ino) |
+
+All four retained source files are preserved without modification.
+
+Challenge 6 and the final application contain identical implementations.
 
 ## 7. Engineering Design Decisions
 
 ### Blocking versus Non-Blocking Timing
 
-Initial development utilized delay-based timing to establish basic LED operation.
+Challenge 4 implements LED timing using delay().
 
-The application was subsequently transitioned to millis()-based timing to allow the microcontroller to continue processing serial commands while controlling LED timing.
+Challenge 5 introduces millis()-based timing with a 250 ms LED state transition interval.
 
-This approach establishes a foundation for more complex embedded control applications requiring concurrent processing of inputs and outputs.
+Challenge 6 integrates elapsed-time calculations with serial-controlled operating modes and independent ON/OFF timing values.
 
-### Serial-Based Control
+The final implementation eliminates delay() calls, allowing the main program loop to continue processing serial commands while LED timing is active.
 
-Serial communication was implemented to allow operating mode selection without modifying and uploading the application for each mode change.
+### Operating Mode Transitions
+
+Upon receiving a valid command, the controller resets its timing reference and updates the LED state.
+
+Stop mode immediately sets the LED output LOW when processed. All other valid operating modes initiate with the LED output HIGH.
 
 ### Heartbeat Indication
 
-A short, periodic LED pulse was implemented as a basic visual indication of controller activity.
+A repeating 50 ms ON and 950 ms OFF interval provides a basic visual indication of controller activity.
 
-## 8. Functional Testing
+## 8. Operating Instructions
 
-| Test ID | Test Description | Reported Result |
+1. Connect the Arduino Leonardo through USB.
+2. Open the final application in Arduino IDE.
+3. Select the Arduino Leonardo board and appropriate port.
+4. Upload the sketch.
+5. Open the Serial Monitor.
+6. Enter a command from 0 through 4.
+7. Observe the corresponding LED behavior.
+
+## 9. Functional Testing
+
+| Test ID | Function | Reported Result |
 |---|---|---|
-| T001 | Basic LED output operation | Pass |
-| T002 | Stop mode operation | Pass |
-| T003 | Normal mode operation | Pass |
-| T004 | Warning mode operation | Pass |
-| T005 | Custom mode operation | Pass |
-| T006 | Heartbeat mode operation | Pass |
-| T007 | Serial-based mode selection | Pass |
-| T008 | Non-blocking LED timing | Pass |
+| T001 | Basic LED output | Pass |
+| T002 | Stop mode | Pass |
+| T003 | Normal mode | Pass |
+| T004 | Warning mode | Pass |
+| T005 | Custom mode | Pass |
+| T006 | Heartbeat mode | Pass |
+| T007 | Serial mode selection | Pass |
+| T008 | Non-blocking operation | Pass |
 
-All five operating modes were reported functional during hands-on development.
+Functional results are based on observations reported during original hands-on development.
 
-Results are based on development observations. Independent timing measurements and formal instrument-based validation were not documented.
+A subsequent static source code review confirmed the implemented operating modes, configured timing values, startup state, and non-blocking timing structure.
 
-## 9. Skills Practiced
+Independent compilation, hardware retesting, and instrument-based timing validation have not been performed during documentation review.
 
-- Microcontroller programming
+## 10. Known Limitations
+
+- The Challenge 4 startup message omits command 3.
+- The final application startup message omits command 4.
+- Both omitted commands are implemented in their respective applications.
+- Invalid serial commands are ignored without an error message.
+- LED timing accuracy has not been measured using external instrumentation.
+
+The original source files remain unchanged to preserve development history.
+
+## 11. Skills Practiced
+
+- Arduino C/C++ programming
 - Digital output control
 - Conditional logic
-- Variable management
+- Boolean state management
 - Serial communication
 - Operating mode management
 - Non-blocking timing
-- Functional testing
 - Incremental software development
+- Functional testing and troubleshooting
 
-## 10. Lessons Learned
+## 12. Lessons Learned
 
 - Blocking delays can limit controller responsiveness.
-- Non-blocking timing allows additional logic to execute while timed operations are active.
-- Serial communication provides a practical interface for testing embedded applications.
+- Non-blocking timing allows additional program logic to execute during timed operations.
+- Serial communication provides a practical interface for embedded system testing.
 - Incremental development simplifies functional testing and troubleshooting.
-- Status indicators provide useful visual feedback during controller operation.
+- Visual status indicators provide useful operational feedback.
 
-## 11. Future Improvements
-
-Potential improvements include:
+## 13. Future Improvements
 
 - Physical push-button control.
 - Additional digital outputs.
 - Expanded diagnostic feedback.
-- Hardware-based fault indication.
+- Invalid command handling.
+- Complete startup command instructions.
 - Instrument-based timing verification.
 
 These improvements are outside the completed scope of Project 001.
 
-## 12. Documentation Limitations
+## 14. Documentation Limitations
 
-Original photographs were not retained during development.
+Original development photographs are unavailable.
 
-This documentation was reconstructed from the original development records. Final source code verification and supporting technical documentation remain pending.
+Documentation was prepared retrospectively using retained development records and original source code.
 
-No unrecorded measurements or test results are claimed.
+The exact project completion date has not been verified.
 
-## 13. Revision History
+No unrecorded measurements or independently verified hardware test results are claimed.
+
+## 15. Revision History
 
 | Revision | Description |
 |---|---|
 | R00 | Initial retrospective engineering documentation |
+| R01 | Source code review, source links, implementation details, known limitations and verification disclosures |
 
 ---
 
