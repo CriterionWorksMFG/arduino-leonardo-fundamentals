@@ -9,92 +9,139 @@ This repository documents a progressive series of hands-on embedded systems and 
 
 The project series focuses on developing practical competencies in microcontroller programming, electronic circuit design, control logic, troubleshooting, and electromechanical integration.
 
-Each project builds upon previous concepts while introducing increasingly complex hardware and software functionality.
-
-## Project Objectives
-
-- Develop foundational embedded systems programming skills.
-- Implement digital input and output control.
-- Develop non-blocking timing and control logic.
-- Implement operating states and fault-handling logic.
-- Integrate electronic and electromechanical components.
-- Apply structured testing and troubleshooting methods.
-- Maintain professional engineering documentation.
-
-## Hardware and Software
-
-| Component | Description |
-|---|---|
-| Microcontroller | Arduino Leonardo |
-| Processor | ATmega32U4 |
-| Development Environment | Arduino IDE |
-| Programming Language | Arduino C/C++ |
-| Prototyping | Solderless breadboard |
-| Electronic Components | LEDs, resistors, push buttons and servo motors |
+Each project builds upon previously established concepts while introducing increasingly complex hardware and software functionality.
 
 ## Project Register
 
 | Project | Title | Development Status |
 |---|---|---|
-| 001 | LED Control System | Completed |
-| 002 | Dual-Button Control System | Completed |
+| 001 | [LED Control System](project-001-led-control/) | Completed |
+| 002 | [Dual-Button Control System](project-002-button-control/) | Completed |
 | 003 | Servo Control System | In Progress |
 
 ## Technical Development
 
 ### Project 001 — LED Control System
 
+Development of a five-mode LED controller utilizing serial communication and non-blocking timing.
+
 - Digital output control
 - Serial command processing
 - Multiple operating modes
-- Non-blocking timing using millis()
+- Non-blocking timing using `millis()`
 - Heartbeat status indication
 
+[View Project 001](project-001-led-control/)
+
 ### Project 002 — Dual-Button Control System
+
+Development of a dual-input, dual-output controller incorporating operating states, latched stop logic, and simulated fault handling.
 
 - Digital input and output integration
 - Push-button debouncing
 - Operating state management
-- Latched stop logic
-- Simulated fault handling
+- Latched stop functionality
+- Simulated fault override
 - System reset logic
+
+[View Project 002](project-002-button-control/)
 
 ### Project 003 — Servo Control System
 
-Current development objectives:
+Currently under development.
+
+Development objectives include:
 
 - Servo position control
 - External power integration
 - Electrical power fundamentals
 - Electromechanical control
 
+Documentation will be added as development progresses.
+
+## Hardware and Software
+
+| Component | Specification |
+|---|---|
+| Microcontroller | Arduino Leonardo |
+| Processor | ATmega32U4 |
+| Development Environment | Arduino IDE |
+| Programming Language | Arduino C/C++ |
+| Prototyping | Solderless breadboard |
+| Components | LEDs, resistors, push buttons, and servo motors |
+
+## Technical Competencies
+
+| Technical Area | Development Status |
+|---|---|
+| Digital output control | Practiced |
+| Digital input control | Practiced |
+| Serial communication | Practiced |
+| Non-blocking timing | Practiced |
+| Input debouncing | Practiced |
+| Operating state management | Practiced |
+| Simulated fault handling | Practiced |
+| Electronics prototyping | Practiced |
+| Servo control | In Progress |
+| External power integration | In Progress |
+
 ## Engineering Documentation
 
-Individual project documentation will include, where available:
+Completed project documentation includes:
 
 - Engineering objectives
-- Hardware requirements
-- Circuit and wiring diagrams
-- Source code
-- Operational descriptions
-- Testing and validation records
-- Troubleshooting and corrective actions
+- Hardware inventories
+- Original source code
+- Intermediate development sketches
+- System architecture diagrams
+- Electrical wiring diagrams where applicable
+- Timing diagrams
+- Functional test records
+- Static source code reviews
+- Known limitations
 - Lessons learned
-- Revision history
+- Revision histories
+
+## Repository Structure
+
+    arduino-leonardo-fundamentals/
+    ├── README.md
+    ├── project-001-led-control/
+    │   ├── README.md
+    │   ├── development/
+    │   ├── diagrams/
+    │   ├── docs/
+    │   └── src/
+    └── project-002-button-control/
+        ├── README.md
+        ├── development/
+        ├── diagrams/
+        ├── docs/
+        └── src/
 
 ## Documentation Integrity
 
-This repository distinguishes completed functionality from proposed and in-progress development.
+Original retained source code is preserved to demonstrate the progression of technical development.
 
-Original photographs are not available for Projects 001 and 002. Any subsequently reconstructed diagrams or demonstrations will be identified accordingly.
+Original photographs are unavailable for Projects 001 and 002. Supporting diagrams and technical documentation have been prepared retrospectively.
+
+Functional test results are based on reported hands-on development observations. Configured software timing values are distinguished from instrument-measured performance.
+
+These projects are educational engineering prototypes and are not intended for safety-critical applications.
 
 ## Professional Development
 
-This project series is part of the Criterion Works Engineering Portfolio, combining an established background in mechanical design, manufacturing, and project management with developing competencies in electronics, embedded systems, robotics, and industrial automation.
+This repository is part of the Criterion Works Engineering Portfolio, combining an established professional background in mechanical design, manufacturing, and project management with developing technical competencies in:
+
+- Electronics and embedded systems
+- Robotics and mechatronics
+- Industrial automation
+- Networking and cybersecurity
+- Software development
 
 ## Repository Status
 
-Active development — additional projects and technical documentation will be added as development progresses.
+Active development. Additional projects and engineering documentation will be added as the project series progresses.
 
 ---
 
