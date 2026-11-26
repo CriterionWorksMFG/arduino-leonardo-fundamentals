@@ -11,7 +11,7 @@
 | Development Status | Completed |
 | Functional Testing | Developer-reported pass |
 | Source Code Review | Completed |
-| Documentation Revision | R01 |
+| Documentation Revision | R02 |
 
 ## 1. Project Overview
 
@@ -44,6 +44,10 @@ The application controls the onboard LED using the LED_BUILTIN pin definition.
 
 ## 4. System Architecture
 
+![System Architecture](diagrams/001_ARC_001_system-architecture_R00.svg)
+
+*Figure 1 — System architecture derived from the final controller implementation.*
+
 The system consists of four primary functional elements:
 
 1. Serial Monitor operator interface.
@@ -54,6 +58,10 @@ The system consists of four primary functional elements:
 The microcontroller processes incoming serial commands and controls the LED according to the selected operating mode.
 
 ## 5. Operating Modes
+
+![LED Timing Diagram](diagrams/001_DAT_001_led-timing_R00.svg)
+
+*Figure 2 — Nominal LED timing derived from configured software intervals. Waveforms represent intended behavior, not instrument measurements.*
 
 | Command | Operating Mode | ON Duration | OFF Duration |
 |---|---|---:|---:|
@@ -196,7 +204,7 @@ No unrecorded measurements or independently verified hardware test results are c
 |---|---|
 | R00 | Initial retrospective engineering documentation |
 | R01 | Source code review, source links, implementation details, known limitations and verification disclosures |
-
+| R02 | Added system architecture and LED timing diagrams |
 ---
 
 **Criterion Works — Engineering Portfolio**
