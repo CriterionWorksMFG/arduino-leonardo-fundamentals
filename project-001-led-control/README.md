@@ -11,7 +11,7 @@
 | Development Status | Completed |
 | Functional Testing | Developer-reported pass |
 | Source Code Review | Completed |
-| Documentation Revision | R02 |
+| Documentation Revision | R03 |
 
 ## 1. Project Overview
 
@@ -79,6 +79,8 @@ The controller initializes in Stop mode with the LED turned off.
 
 ## 6. Source Code
 
+[View Source Code Review Record](docs/001_RPT_001_source-code-review_R00.md)
+
 ### Final Application
 
 [Project001_Final_5Mode_Controller.ino](src/Project001_Final_5Mode_Controller/Project001_Final_5Mode_Controller.ino)
@@ -129,6 +131,8 @@ A repeating 50 ms ON and 950 ms OFF interval provides a basic visual indication 
 7. Observe the corresponding LED behavior.
 
 ## 9. Functional Testing
+
+[View Functional Test Record](docs/001_TST_001_functional-test-record_R00.md)
 
 | Test ID | Function | Reported Result |
 |---|---|---|
@@ -205,6 +209,8 @@ No unrecorded measurements or independently verified hardware test results are c
 | R00 | Initial retrospective engineering documentation |
 | R01 | Source code review, source links, implementation details, known limitations and verification disclosures |
 | R02 | Added system architecture and LED timing diagrams |
+| R03 | Added functional test and source code review references |
+
 ---
 
 **Criterion Works — Engineering Portfolio**
